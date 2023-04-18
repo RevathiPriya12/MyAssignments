@@ -34,8 +34,7 @@ public class DuplicateLead {
 		System.out.println(title);
 		driver.findElement(By.xpath("//input[@value='Create Lead']")).click();
         WebElement duplicatefirstname=driver.findElement(By.xpath("//span[@id='viewLead_firstName_sp']"));
-		
-		String dupFirstname=duplicatefirstname.getText();
+        String dupFirstname=duplicatefirstname.getText();
 		System.out.println(dupFirstname);
 		if(FirstName.equals(dupFirstname))
 		{
@@ -46,6 +45,7 @@ public class DuplicateLead {
 			System.out.println("Duplicate Lead not is Created");
 		}
 
+		
  
 }
 }
